@@ -1,18 +1,24 @@
 #include <stdio.h>
 
-int main() {
+void checkNum(int N) {
 
-    double num;
-    printf("Enter a number: ");
-    scanf("%lf", &num);
-    if (num <= 0.0) {
-        if (num == 0.0)
-            printf("You entered 0.");
-        else
-            printf("You entered a negative number.");
-    } 
+    // Check if the number is zero
+    if (N == 0) {
+        printf("Zero\n");
+        return;
+    }
+
+    // Extracting msb
+    int msb = N & (1 << (sizeof(int) * 8 - 1));
+
+    if (msb)
+        printf("Negative\n");
     else
-        printf("You entered a positive number.");
+        printf("Positive\n");
+}
 
+int main() {
+    int N = 10;
+    checkNum(N);
     return 0;
 }
