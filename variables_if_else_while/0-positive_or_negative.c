@@ -1,17 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    int n;
- 
-    scanf("%d",&n);
- 
-    if(n == 0)
-        printf("Neither positive nor negative");
-    else if(n < 0)
-        printf("Negative\n");
+int main() {
+    int a;
+    printf("enter the number:\n");
+    scanf("%d",&a);
+    printf("a=%d \n",a);
+    if(a>0)
+        {printf("the number is positive");}
     else
-        printf("Positive\n");
-     
+        {printf("the number is zero");}
+    else if(a<0)
+        {printf("the number is negative");}
     return 0;
+
+
 }
