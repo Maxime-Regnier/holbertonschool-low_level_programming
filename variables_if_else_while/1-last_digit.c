@@ -1,17 +1,25 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
-int main()
+
+int main(void)
 {
-    int n, lastDigit;
+    int n, Last digit of;
 
-    /* Input number from user */
-    printf("Enter any number: ");
-    scanf("%d", &n);
-
-    /* Get the last digit */
-    lastDigit = n % 5;
-
-    printf("Last digit = %d", lastDigit);
-
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
+    if (n > 5)
+    {
+	    printf("Last digit of = %d", lastDigit);
+    }
+    else if (n = 0)
+    { 
+	    printf("%d is positive\n", n);
+    }
+    else
+    {
+	    printf("%d n < 6);
+    }
     return 0;
 }
