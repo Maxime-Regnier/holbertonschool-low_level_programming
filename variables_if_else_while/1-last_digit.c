@@ -5,21 +5,11 @@
 
 int main(void)
 {
-    int n, Last digit of;
-
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    if (n > 5)
-    {
-	    printf("Last digit of = %d", lastDigit);
-    }
-    else if (n = 0)
-    { 
-	    printf("%d is positive\n", n);
-    }
-    else
-    {
-	    printf("%d n < 6);
-    }
+    int n, last_digit;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    last_digit = number % 10;
+    printf("The last digit of = %d is %d", number, lastdigit);
+    
     return 0;
 }
