@@ -18,24 +18,22 @@ int main(void)
 /*
  * dernier nombre
  * */
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+lastd = n % 10;
 
 
-
-    printf("The last digit of = %d is %d", number, last_digit);
-
-    scanf("%d", &n);
-
-    if (n > 5)
+    if (lastd  > 5)
     {
-    printf(and is greater than 5);
+    printf("Last digit of %d is %d and is greater than 5", n, lastd);
     }
-    else if (n == 0)
+    else if (lastd == 0)
     {
-	    printf(and is 0);
+	    printf("Last digit of %d is %d and is 0", n, lastd);
     }
-    else (0 < 6)
+    else
     {
-	    printf(and is less than 6 and not 0);
+	    printf("Last digit of %d is %d and is less than 6 and not 0", n, lastd);
     }
 
     return 0;
