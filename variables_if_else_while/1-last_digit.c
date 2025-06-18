@@ -10,17 +10,18 @@
 
 int main(void)
 { 
-    int number;
+    int n;
 	/*
 	 *nombre en entier
 	 */
-    int last_digit;
-/*
- * dernier nombre
- * */
+    int lastd;
+
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 lastd = n % 10;
+/*
+ * dernier nombre
+ * */
 
 
     if (lastd  > 5)
