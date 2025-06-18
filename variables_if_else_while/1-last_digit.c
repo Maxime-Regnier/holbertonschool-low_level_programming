@@ -2,14 +2,42 @@
 #include <time.h>
 #include <stdio.h>
 
+/** 
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
-{
-    int n, last_digit;
-    printf("Enter a number: ");
-    scanf("%d", &number);
-    last_digit = number % 10;
-    printf("The last digit of = %d is %d", number, lastdigit);
-    
+{ 
+    int number;
+	/*
+	 *nombre en entier
+	 */
+    int last_digit;
+/*
+ * dernier nombre
+ * */
+
+
+
+    printf("The last digit of = %d is %d", number, last_digit);
+
+    scanf("%d", &n);
+
+    if (n > 5)
+    {
+    printf(and is greater than 5);
+    }
+    else if (n == 0)
+    {
+	    printf(and is 0);
+    }
+    else (0 < 6)
+    {
+	    printf(and is less than 6 and not 0);
+    }
+
     return 0;
 }
+
