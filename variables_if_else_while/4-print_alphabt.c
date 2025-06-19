@@ -11,17 +11,13 @@
 
 int main(void)
 {
-	char low, e, q;
+	char i = 'a';
 
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a'; low <= 'z'; low++)
+	while (i <= 'z')
 	{
-	if (low = 'a'; low <= 'z'; low++)
-	}
-	if (low != e && low != q)
-	putchar(low);
+
+	if (i != 'e' && i != 'q')
+	putchar(i);
 	}
 	putchar('\n');
 	return (0);
