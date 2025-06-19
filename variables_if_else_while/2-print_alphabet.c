@@ -1,15 +1,21 @@
-#include "holberton.h"
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+#include <holberton.h>
 
 /**
- * print_alphabet - Prints the alphanet in lowercase
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-voicd print_alphabet(voice)
+
+int main(void)
 {
-	char letter;
+	int letter;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
 		putchar(letter);
 	}
-	_putchar('\n');
+	putchar('\n');
+return (0);
 }
