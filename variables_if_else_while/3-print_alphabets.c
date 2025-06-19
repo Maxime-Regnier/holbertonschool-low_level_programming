@@ -19,11 +19,12 @@ while (i <= 'z')
 
 }
 
-while (i <= 'Z')
+while (j <= 'Z')
 {
-	putchar (i);
-	i++;
+	putchar (j);
+	j++;
 }
+putchar('\n');
 return (0);
 
 }
