@@ -11,6 +11,7 @@
  */
 
 int mul(int a, int b)
+
 {
 
 	printf("98*1024\n");
