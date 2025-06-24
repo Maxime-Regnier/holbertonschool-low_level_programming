@@ -1,25 +1,15 @@
 #include "main.h"
-#include <stdio.h>
-#include <ctype.h>
 
 /**
  * mul - Multiplie deux entiers.
- * @a: 98
- * @b: 1024
+ * @a: nombre sert a multiplier
+ * @b: avec un autre nombre
  *
- * Return: 98*1024
+ * Return: Resultat d'une multiplication de a et de b
  */
 
 int mul(int a, int b)
 
 {
-
-	printf("98*1024\n");
-	scanf("%d %d", &a, &b);
-	printf("-402*-4096\n");
-	scanf("%d %d", &a, &b);
-
-	printf("Multiplication of %d and %d is %d\n", a, b, (a * b));
-
-	return (0);
+	return (a * b);
 }
