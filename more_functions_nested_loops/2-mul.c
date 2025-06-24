@@ -16,6 +16,8 @@ int mul(int a, int b)
 
 	printf("98*1024\n");
 	scanf("%d %d", &a, &b);
+	printf("-402*-4096\n");
+	scanf("%d %d", &a, &b);
 
 	printf("Multiplication of %d and %d is %d\n", a, b, (a * b));
 
