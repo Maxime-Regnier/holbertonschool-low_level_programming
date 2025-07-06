@@ -5,7 +5,7 @@
  * @argc: Number of command-line arguments.
  * @argv: Array of command-line arguments (unused).
  *
- * Prints the number of arguments, excluding the program name, followed by a new line.
+ * Prints argc - 1, then a new line.
  * Return: Always 0.
  */
 
