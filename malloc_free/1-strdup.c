@@ -10,21 +10,28 @@
 
 char *_strdup(char *str)
 {
-unsigned int i;
+	unsigned int i, length;
+	char *strdup;
 
-char *strdup = malloc(sizeof(char) * (size_t) + 1);
-
-if (strdup == NULL)
+if (str == NULL)
 {
 	return (NULL); 
 }
 
-for (i = 0; i < (size_t) i++)
+for (length = 0; str[length] != '\0'; length++);
+
+strdup = malloc(sizeof(char) * (length) + 1);
+
+if (strdup == NULL)
+{
+	return (NULL);
+}
+
+for (i = 0; i < length; i++)
 {
 	strdup[i] = str[i];
-}
-str[size_t] = '\0';
-
+}	
+strdup [length] = '\0';
 return (strdup);
 
 }
