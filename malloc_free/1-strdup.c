@@ -2,22 +2,17 @@
 #include <stdlib.h>
 
 /*
- *
- *
- *
+ * Duplicates a given string by allocating memory dynamically.
+ * The function copies each character from the original string
+ * to the newly allocated memory and terminates it with a null
+ * character.
  */
 
 char *_strdup(char *str)
 {
-char *strdup;
 unsigned int i;
 
-	if (strdup == NULL)
-	{
-	return (NULL);
-	}
-
-strdup = malloc(sizeof(char) * (size + 1));
+char *strdup = malloc(sizeof(char) * (size + 1));
 
 if (strdup == NULL)
 {
@@ -26,7 +21,7 @@ if (strdup == NULL)
 
 for (i = 0; i < size; i++)
 {
-	strdup[i] = str;
+	strdup[i] = str[i];
 }
 strdup[size] = '\0';
 
