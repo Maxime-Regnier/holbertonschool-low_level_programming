@@ -12,18 +12,18 @@ char *_strdup(char *str)
 {
 unsigned int i;
 
-char *strdup = malloc(sizeof(char) * (size + 1));
+char *strdup = malloc(sizeof(char) * (size_t) + 1);
 
 if (strdup == NULL)
 {
 	return (NULL); 
 }
 
-for (i = 0; i < size; i++)
+for (i = 0; i < (size_t) i++)
 {
 	strdup[i] = str[i];
 }
-strdup[size] = '\0';
+str[size_t] = '\0';
 
 return (strdup);
 
