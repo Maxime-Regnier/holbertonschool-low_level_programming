@@ -9,7 +9,8 @@
 
 char *_strdup(char *str)
 {
-char *strdup
+char *strdup;
+unsigned int i;
 
 	if (strdup == NULL)
 	{
@@ -25,10 +26,10 @@ if (strdup == NULL)
 
 for (i = 0; i < size; i++)
 {
-	strdup[i] = c;
+	strdup[i] = str;
 }
 strdup[size] = '\0';
 
-return (strup);
+return (strdup);
 
 }
