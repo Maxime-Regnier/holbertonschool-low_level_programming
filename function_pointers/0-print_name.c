@@ -11,9 +11,8 @@
 void print_name(char *name, void (*f)(char *))
 {
 	unsigned int i;
-	char *name;
 
-int (*f)(int a, float b);
+void (*f)(char *);
 
-
+name = malloc(size * sizeof(char));
 }
