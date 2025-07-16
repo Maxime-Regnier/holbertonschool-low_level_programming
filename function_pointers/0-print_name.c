@@ -10,9 +10,10 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	unsigned int i;
 
-void (*f)(char *);
+if(name != NULL && f != NULL)
+{
+f(name);
+}
 
-name = malloc(size * sizeof(char));
 }
