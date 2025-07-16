@@ -1,5 +1,6 @@
-#include "main.h"
+#include "function_pointers.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  *
@@ -15,6 +16,6 @@ if(name != NULL && f != NULL)
 {
 f(name);
 }
-malloc 
+
 
 }
