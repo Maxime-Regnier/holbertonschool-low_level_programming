@@ -15,5 +15,6 @@ if(name != NULL && f != NULL)
 {
 f(name);
 }
+malloc 
 
 }
