@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stddef.h>
 
 /**
  *
@@ -12,5 +13,8 @@ if (array == NULL)
 if (action == NULL)
 if (size == 0)
 
-
+	for (size_t i = 0; i < size; i++)
+	{
+	action(array[i]);
+	}
 }
