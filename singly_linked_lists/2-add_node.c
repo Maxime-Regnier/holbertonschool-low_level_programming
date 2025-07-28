@@ -16,7 +16,7 @@ typedef struct list_s
 } list_t;
 list_t *add_node(list_t **head, const char *str)
 {
-
+struct *add_node = malloc(sizeof(struct node));
 
 
 }
