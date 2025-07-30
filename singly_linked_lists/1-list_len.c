@@ -2,19 +2,11 @@
 #include <stdio.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * list_len - Compte le nombre d'ele©ments dans une liste inee
+ * @h: Pointeur vers le d√©but de la list
  *
- * Description: singly linked list node structure
+ * Return: Nombre total de noeuds
  */
-typedef struct list_s
-{
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-} list_t;
 size_t list_len(const list_t *h)
 {
 		size_t count = 0;
