@@ -10,6 +10,15 @@
  *
  * Return: Adresse du nouveau nœud, ou NULL si l'opération échoue
  */
+
+unsigned int _strlen(const char *s)
+{
+	unsigned int i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
+
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *add_node = malloc(sizeof(list_t));
@@ -21,7 +30,7 @@ if (add_node->str == NULL)
 	free(add_node);
 	return (NULL);
 }
-add_node->len = strlen(str);
+add_node->len = _strlen(str);
 add_node->next = *head;
 *head = add_node;
 
