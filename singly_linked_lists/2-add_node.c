@@ -1,20 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
-
-/**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- */
-typedef struct list_s
-{
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node - Ajoute un nouveau nœud au début d'une liste list_t
@@ -25,7 +12,7 @@ typedef struct list_s
  */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *add_node = malloc(sizeof(liste_t));
+list_t *add_node = malloc(sizeof(list_t));
 if (add_node == NULL)
 	return (NULL);
 add_node->str = strdup(str);
@@ -38,7 +25,5 @@ add_node->len = strlen(str);
 add_node->next = *head;
 *head = add_node;
 
-return add_node;
-}
-
+return (add_node);
 }
