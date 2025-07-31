@@ -12,9 +12,10 @@
 unsigned int _strlen(const char *s)
 {
 	unsigned int i = 0;
+
 	while (s[i])
 		i++;
-	return i;
+	return (i);
 }
 
 /**
@@ -26,7 +27,7 @@ unsigned int _strlen(const char *s)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *add_node_end = malloc (sizeof(list_t));
+list_t *add_node_end = malloc(sizeof(list_t));
 list_t *temp;
 	if (add_node_end == NULL)
 		return (NULL);
