@@ -4,21 +4,27 @@
 #include <string.h>
 
 /**
- * add_node - Ajoute un nouveau nœud au début d'une liste list_t
- * @head: Double pointeur vers le premier élément de la liste
- * @str: Chaîne de caractères à dupliquer et stocker dans le nouveau nœud
+ * _strlen - Calcule la longueur d'une chaîne de caractères
+ * @s: Chaîne dont on veut calculer la longueur
  *
- * Return: Adresse du nouveau nœud, ou NULL si l'opération échoue
+ * Return: Longueur de la chaîne
  */
-
 unsigned int _strlen(const char *s)
 {
 	unsigned int i = 0;
+
 	while (s[i])
 		i++;
 	return (i);
 }
 
+/**
+ * add_node - Ajoute un nouveau noeud au début d'une liste list_t
+ * @head: Double pointeur vers le premier élémente la liste
+ * @str: Chaîne de caractèr a dupliquer et stocker dans le nouveau noeud
+ *
+ * Return: Adresse du nouveau noeud, ou NULL si l'opération échoue
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *add_node = malloc(sizeof(list_t));
