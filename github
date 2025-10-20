@@ -1,0 +1,4 @@
+#!/bin/bash
+git config --global user.name Maxime-Regnier
+git config --global user.email 11493@holbertonstudents.com
+git push
