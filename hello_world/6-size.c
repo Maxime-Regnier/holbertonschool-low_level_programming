@@ -1,9 +1,9 @@
 #include<stdio.h>
 
 /**
- * main - Displays the size of basic C data types
- * using the sizeof operator. Prints int, float, double,
- * and char sizes in bytes.
+ * main - Prints the size of various C data types
+ * using the sizeof operator. Displays char, int, long int,
+ * long long int, and float sizes in bytes.
  * Return: Always 0 (Success)
  */
 
