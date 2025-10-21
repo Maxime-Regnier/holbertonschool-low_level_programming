@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - Generates a random number and prints its sign
+ *
+ * Description:
+ * This program generates a random integer, prints it, and
+ * determines whether the number is positive, negative, or zero.
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 int n;
@@ -13,15 +23,15 @@ printf("%d \n", n);
 
 if (n > 0)
 {
-printf("%d id positive\n" n);
+printf("%d is positive\n", n);
 }
 else if (n < 0)
 {
-printf("%d id negative\n" n);
+printf("%d is negative\n", n);
 }
 else
 {
-printf("%d is zero\n" n);
+printf("%d is zero\n", n);
 }
 return (0);
 }
