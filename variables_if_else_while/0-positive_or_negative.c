@@ -17,7 +17,7 @@ printf("The number is positive \n");
 }
 else if (n < 0)
 {
-printf("The nulber is zero \n");
+printf("The number is negative \n");
 }
 else
 {
