@@ -13,15 +13,15 @@ printf("%d \n", n);
 
 if (n > 0)
 {
-printf("The number is positive \n");
+printf("%d id positive\n" n);
 }
 else if (n < 0)
 {
-printf("The number is zero \n");
+printf("%d id negative\n" n);
 }
 else
 {
-printf("The number is negative \n");
+printf("%d is zero\n" n);
 }
 return (0);
 }
