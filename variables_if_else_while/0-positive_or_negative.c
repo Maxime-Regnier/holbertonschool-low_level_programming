@@ -19,7 +19,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-printf("%d\n");
+printf("int\n");
 
 if (n > 0)
 {
