@@ -19,7 +19,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-printf("%d\n", n);
+printf("%d\n");
 
 if (n > 0)
 {
@@ -31,7 +31,7 @@ printf("int is negative\n");
 }
 else
 {
-printf("int is zero \n");
+printf("int is zero\n");
 }
 return (0);
 }
