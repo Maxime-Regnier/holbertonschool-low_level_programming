@@ -11,7 +11,6 @@ int main(void)
 int p;
 p = 48;
 while (p >= '0' && p <= '9')
-
 {
 putchar(p);
 p++;
