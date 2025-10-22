@@ -13,7 +13,6 @@ while (r >= 'a' && r <= 'z')
 if (r != 'e' && r != 'q')
 {
 putchar(r);
-r++;
 }
 putchar(10);
 return (0);
