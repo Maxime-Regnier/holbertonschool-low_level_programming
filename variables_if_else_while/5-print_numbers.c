@@ -8,8 +8,8 @@
 int main(void)
 {
 char p;
-p = 49;
-while (p >= '1' && p <= '9')
+p = 48;
+while (p >= '0' && p <= '9')
 {
 putchar(p);
 p++;
