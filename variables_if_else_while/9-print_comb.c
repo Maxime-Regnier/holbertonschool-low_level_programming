@@ -14,9 +14,10 @@ while (h >= '0' && h <= '9')
 {
 putchar(h);
 h++;
+}
 
 
-putchar(',');
+{putchar(',');
 putchar(' ');
 }
 putchar(10);
