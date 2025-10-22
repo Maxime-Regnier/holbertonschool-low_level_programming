@@ -8,12 +8,12 @@
 
 int main(void)
 {
-char h;
-h = 104;
-while (h >= 'a')
+char n;
+n = 122;
+while (n >= 'a')
 {
-putchar(h);
-h--;
+putchar(n);
+n--;
 }
 putchar(10);
 return (0);
