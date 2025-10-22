@@ -12,10 +12,12 @@ int h;
 h = 48;
 while (h >= '0' && h <= '9')
 {
-putchar(',');
-putchar(' ');
 putchar(h);
 h++;
+
+
+putchar(',');
+putchar(' ');
 }
 putchar(10);
 return (0);
