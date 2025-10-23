@@ -1,5 +1,5 @@
-#include <stdio.h>
+#include "stdio.h"
 #include "main.h"
-_putchar
+_putchar.c
 
 0-putchar.c
