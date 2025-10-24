@@ -14,12 +14,12 @@ int j;
 char z;
 for (j = 0; j < 10; j++)
 {
-    z = 'a';
-    while (z <= 'z')
-        {
-            _putchar(z);
-            z++;
-        }
-    _putchar('\n');
+	z = 'a';
+while (z <= 'z')
+{
+_putchar(z);
+z++;
+}
+	_putchar('\n');
 }
 }
