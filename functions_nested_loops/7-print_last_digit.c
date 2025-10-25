@@ -12,10 +12,11 @@
  */
 int print_last_digit(int girafe)
 {
-if (girafe < 0)
-girafe = (girafe * (-1));
-girafe = girafe % 10;
-_putchar(girafe + '0');
+long u = girafe;
+if (u < 0)
+u = (u * (-1));
+u = u % 10;
+_putchar(u + '0');
 
-return (girafe);
+return (u);
 }
