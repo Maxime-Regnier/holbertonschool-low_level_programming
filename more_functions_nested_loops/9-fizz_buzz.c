@@ -1,16 +1,16 @@
 #include <stdio.h>
 /**
- * main - Imprime les nombres de 1 à 100 avec FizzBuzz
- *
- * Description:
- * Ce programme affiche les nombres de 1 à 100.
- * Pour chaque multiple de 3, il affiche "Fizz" au lieu du nombre.
- * Pour chaque multiple de 5, il affiche "Buzz".
- * Pour les nombres multiples à la fois de 3 et de 5, il affiche "FizzBuzz".
- * Tous les autres nombres sont affichés normalement, séparés par un espace.
- *
- * Return: Toujours 0 (succès)
- */
+* main - Imprime les nombres de 1 à 100 avec FizzBuzz
+*
+* Description:
+* Ce programme affiche les nombres de 1 à 100.
+* Pour chaque multiple de 3, il affiche "Fizz" au lieu du nombre.
+* Pour chaque multiple de 5, il affiche "Buzz".
+* Pour les nombres multiples à la fois de 3 et de 5, il affiche "FizzBuzz".
+* Tous les autres nombres sont affichés normalement, séparés par un espace.
+*
+* Return: Toujours 0 (succès)
+*/
 int main(void)
 {
 int j;
