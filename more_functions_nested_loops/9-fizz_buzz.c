@@ -32,7 +32,7 @@ printf("Fizz ");
 }
 else
 {
-printf("%d ", j);
+printf("%d", j);
 }
 if (j < 100)
 { 
