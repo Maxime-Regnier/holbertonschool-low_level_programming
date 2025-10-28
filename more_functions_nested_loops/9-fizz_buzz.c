@@ -35,7 +35,7 @@ else
 printf("%d", j);
 }
 if (j < 100)
-{ 
+{
 printf(" ");
 }
 }
