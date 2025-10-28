@@ -10,20 +10,25 @@
  */
 void more_numbers(void)
 {
-int b;
-int d;
-for (b = 0; b <= 14; b++)
+int a = 0;
+int b = 0;
+for (a = 0; a != 2; a++)
 {
-d = 9;
-while (d <= 14)
+if (b <= 4 && a <= 1)
 {
-    for (d = 9; d <= 14; d++)
-    {
-_putchar(d);
-d++;
+
+for (b = 0; b > 14; b++)
+{
+    if (b >= 9)
+{
+    a = 1;
 }
-_putchar(10);
+_putchar(b + '0');
+    if (a == 1)
+
+_putchar(a + '0');
+}
+}
 _putchar('\n');
-}
 }
 }
