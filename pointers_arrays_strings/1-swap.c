@@ -1,13 +1,14 @@
 #include "main.h"
 /**
- * 
- * 
- * 
- */
+* swap_int - switch values of two integers
+* @a: first integer pointer
+* @b: second integer pointer
+*
+* Description: Exchanges the values pointed by first and second.
+*/
 void swap_int(int *a, int *b)
 {
-    if (a < 0)
-int a = 2 int b = 3;
-_putchar(*a, *b);
-return (0);
+int p = *a;
+*a = *b;
+*b = p;
 }
