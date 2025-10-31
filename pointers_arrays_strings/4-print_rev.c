@@ -15,10 +15,9 @@ k++;
 }
 while (k > s)
 {
-_putchar(*k);
 k--;
+_putchar(*k);
+
 }
-{
 _putchar('\n');
-}
 }
