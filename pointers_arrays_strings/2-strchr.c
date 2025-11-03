@@ -22,7 +22,7 @@ y++;
 }
 if (c == '\0')
 {
-return (c + s);
+return (s + y);
 }
 else
 {
