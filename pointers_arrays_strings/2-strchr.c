@@ -20,5 +20,9 @@ return (s + y);
 }
 y++;
 }
+if (c == '\0')
+{
+return ('\0');
+}
 return (NULL);
 }
