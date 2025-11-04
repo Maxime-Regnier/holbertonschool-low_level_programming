@@ -6,9 +6,9 @@
 * @accept: string containing bytes to match
 *
 * Return: pointer to the first occurrence in s of any byte in accept,
-* or NULL if none is found * 
-* 
-* 
+* or NULL if none is found *
+*
+*
 */
 char *_strpbrk(char *s, char *accept)
 {
