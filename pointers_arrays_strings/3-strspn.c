@@ -32,5 +32,5 @@ if (j == 0)
 break;
 v++;
 }
-return(r);
+return (r);
 }
