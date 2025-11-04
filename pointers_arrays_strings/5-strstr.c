@@ -19,12 +19,12 @@ while (haystack[f] != '\0')
 o = 0;
 while (needle[o])
 {
-if (haystack[f + o] == needle[o])
+if (haystack[f + o] != needle[o])
 break;
 o++;
 }
 if (needle[o] == '\0')
-return (needle);
+return (haystack + f);
 f++;
 }
 return (NULL);
