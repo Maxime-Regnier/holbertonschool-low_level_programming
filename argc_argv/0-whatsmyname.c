@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-printf("Rahul \n");
+printf("mynameis \n");
 return (0);
 }
