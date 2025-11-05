@@ -4,10 +4,10 @@
 *
 * @argc: Number of arguments passed to the program
 * @argv: Array of pointers to the arguments
-* 
+*
 * Description: The program prints each argument on a separate line,
 * including the program name itself.
-* 
+*
 * Return: 0 on success
 */
 int main(int argc, char *argv[])
