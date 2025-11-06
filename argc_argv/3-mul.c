@@ -17,7 +17,7 @@ return (1);
 }
 num0 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-result = num0 * num2;
+result = num0 *num2;
 printf("%d\n", result);
 return (0);
 }
