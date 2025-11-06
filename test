@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+long int expo(long int n, long int p)
+{
+    if (p == 0)
+        return (1);
+    else
+        return(n * expo(n, p -1));
+}
+
+int main(void) {
+    long int res = expo(2, 3);
+    printf("the result of the exp function = %ld\n", res);
+    return (0);
+}
