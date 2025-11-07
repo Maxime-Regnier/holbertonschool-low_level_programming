@@ -1,0 +1,8 @@
+cc1: fatal error: Test3.c: No such file or directory
+compilation terminated.
+root@MaximeREGNIER:~/holbertonschool-low_level_programming# gcc -Wall Test.3.c
+root@MaximeREGNIER:~/holbertonschool-low_level_programming# ./a
+a.out      argc_argv/ 
+root@MaximeREGNIER:~/holbertonschool-low_level_programming# ./a.out 
+with proper grammar, but the outcome is a piece of art,
+root@MaximeREGNIER:~/holbertonschool-low_level_programming# touch iacta
