@@ -9,11 +9,11 @@
  */
 int _is_prime_helper(int n, int divisor)
 {
-    if (divisor * divisor > n)
-        return (1);           /* n has no divisors → prime */
-    if (n % divisor == 0)
-        return (0);           /* divisible → not prime */
-    return (_is_prime_helper(n, divisor + 1));
+if (divisor * divisor > n)
+return (1);           /* n has no divisors → prime */
+if (n % divisor == 0)
+return (0);           /* divisible → not prime */
+return (_is_prime_helper(n, divisor + 1));
 }
 
 /**
