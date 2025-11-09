@@ -5,27 +5,28 @@
 * @n: The number to find the square root of
 * @candidate: The current number to test
 *
-* Return: A. candidate  B. -1)
+* Return: The natural square root of n if it exists,
+* -1 if n does not have a natural square root
 */
-
 int _sqrt_helper(int n, int candidate)
 {
 if (candidate * candidate == n)
 {
-return candidate;
+return (candidate);
 }
 if (candidate * candidate > n)
 {
-return -1;
-} 
-return _sqrt_helper(n, candidate + 1);
+return (-1);
+}
+return (_sqrt_helper(n, candidate + 1));
 }
 
 /**
-*  _sqrt_recursion - Returns the natural square root of a number
+* _sqrt_recursion - Returns the natural square root of a number
 * @n: The number to find the square root of
-* 
-* Return: 
+*
+* Return: The natural square root of n if it exists,
+* -1 if n does not have a natural square root
 */
 int _sqrt_recursion(int n)
 {
@@ -33,5 +34,5 @@ if (n < 0)
 {
 return (-1);
 }
-return _sqrt_helper(n, 0);
+return (_sqrt_helper(n, 0));
 }
