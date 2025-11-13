@@ -1,8 +1,8 @@
 #include <stdlib.h>
 /**
-* _strdup - ________________________________
-* @str: ________________________________
-* Return: ________________________________
+* _strdup - retourne une copie d'une chaîne allouée dynamiquement
+* @str: chaîne à dupliquer
+* Return: pointeur vers la copie, ou NULL si str = NULL ou malloc échoue
 */
 char *_strdup(char *str)
 {
