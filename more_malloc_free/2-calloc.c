@@ -15,7 +15,7 @@ char *ptr;
 unsigned int t, g;
 if (nmemb == 0 || size == 0)
 return (NULL);
-t = (nmemb + size) * sizeof(char);
+t = (nmemb * size);
 ptr = malloc(t);
 if (!ptr)
 return (NULL);
