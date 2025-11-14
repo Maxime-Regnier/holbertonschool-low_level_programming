@@ -11,20 +11,24 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *p;
-unsigned int len1, len2, total;
-len1 = s1 ? strlen(s1) : 0;
-len2 = s2 ? strlen(s2) : 0;
-if (n >= len2)
+unsigned int len1 = 0, len2 = 0, total;
+unsigned int b, c;
+if (s1)
+while (s1[len1])
+len1++;
+if (s2)
+while (s2[len2])
+len2++;
+if (n > len2)
 n = len2;
 total = len1 + n;
 p = malloc(sizeof(char) * (total + 1));
 if (p == NULL)
 return (NULL);
-if (s1)
-strcpy(p, s1);
-else
-p[0] = '\0';
-if (s2)
-strncat(p + len1, s2, n);
+for (b = 0; b < len1; b++)
+p[b] = s1[b];
+for (c = 0; c < n; c++)
+p[b + c] = s2[c];
+p[b + c] = '\0';
 return (p);
 }
