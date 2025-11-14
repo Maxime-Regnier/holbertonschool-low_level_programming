@@ -12,6 +12,6 @@ int m;
 if (grid == NULL)
 return;
 for (m = 0; m < height; m++)
-free(grid);
 free(grid[m]);
+free(grid);
 }
