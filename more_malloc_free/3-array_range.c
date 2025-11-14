@@ -26,6 +26,6 @@ h = malloc(sizeof(int) * size);
 if (!h)
 return (NULL);
 for (y = 0; y < size; y++)
-h[y] = y;
+h[y] = min + y;
 return (h);
 }
