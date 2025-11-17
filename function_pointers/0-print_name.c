@@ -6,11 +6,8 @@
 * @f: A pointer to a function that takes a char pointer and returns nothing
 *
 * Description:
-* This function receives a string `name` and a function pointer `f`.
-* If both parameters are valid, it calls `f(name)` so that the
-* provided function determines how the name is printed
-* (normal print, uppercase, lowercase, etc.).
-* If `name` or `f` is NULL, the function does nothing.
+* Calls the function pointed to by f, passing name as argument.
+* If name or f is NULL, does nothing.
 */
 void print_name(char *name, void (*f)(char *))
 {
