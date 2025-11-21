@@ -2,11 +2,11 @@
 #include <stddef.h>
 #include <string.h>
 /**
-* get_op_func - selects the correct function for the given operator
-* @s: operator passed as argument
-* Return: pointer to the function corresponding to the operator,
-* or NULL if invalid
-*/
+ * get_op_func - selects the correct function for the given operator
+ * @s: operator passed as argument
+ * Return: pointer to the function corresponding to the operator,
+ * or NULL if invalid
+ */
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {

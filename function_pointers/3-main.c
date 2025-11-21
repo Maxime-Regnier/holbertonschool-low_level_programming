@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
-* main - executes a simple calculator
-* @argc: number of arguments
-* @argv: array of arguments
-* Return: 0 on success, or exit with specific error codes
-*/
+ * main - executes a simple calculator
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0 on success, or exit with specific error codes
+ */
 int main(int argc, char *argv[])
 {
 int a, b, result;
