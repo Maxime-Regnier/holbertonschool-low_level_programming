@@ -12,10 +12,12 @@ unsigned int p;
 int value;
 va_start(args, n);
 for (p = 0; p < n; p++)
+{
 value = va_arg(args, int);
 printf("%d", value);
-if (p != p - 1 && separator != NULL)
+if (p != n - 1 && separator != NULL)
 printf("%s", separator);
+}
 va_end(args);
 printf("\n");
 }
