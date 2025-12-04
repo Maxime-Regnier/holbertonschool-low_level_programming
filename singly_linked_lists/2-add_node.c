@@ -15,21 +15,18 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *new_node;
-if (!head)
+list_t *add_node;
+add_node = malloc(sizeof(list_t));
+if (!add_node)
 return (NULL);
-new_node = malloc(sizeof(list_t));
-if (!new_node)
+add_node->str = strdup(str);
+if (!add_node->str)
 {
+free(add_node);
 return (NULL);
 }
-new_node->str = strdup(str);
-if (!new_node->str)
-{
-free(new_node);
-return (NULL);
-}
-new_node->next = *head;
-*head = new_node;
-return (new_node);
+add_node->len = strlen(str);
+add_node->next = *head;
+*head = add_node;
+return (add_node);
 }
