@@ -29,12 +29,14 @@ read_bytes = read(fd, buffer, letters);
 if (read_bytes == -1)
 {
 free(buffer);
+close(fd);
 return (0);
 }
-write_bytes = write(2, buffer, read_bytes);
+write_bytes = write(1, buffer, read_bytes);
 if (write_bytes < read_bytes)
 {
 free(buffer);
+close(fd);
 return (0);
 }
 free(buffer);
