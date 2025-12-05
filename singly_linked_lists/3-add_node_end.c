@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-  * add_node_end - Adds a new node at the end of a list_t list
-  * @head: A pointer to the pointer to the head of the list
-  * @str: The string to be duplicated and stored in the new node
-  *
+* add_node_end - Adds a new node at the end of a list_t list
+* @head: A pointer to the pointer to the head of the list
+* @str: The string to be duplicated and stored in the new node
+*
   * Description: This function allocates memory for a new node, duplicates
   * the string str, calculates its length, sets the next pointer to NULL,
   * and appends the node at the end of the list. If the list is empty,
