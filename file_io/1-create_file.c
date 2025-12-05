@@ -18,13 +18,13 @@ fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 if (fd == -1)
 return (-1);
 if (text_content == NULL)
-lenght = strlen(text_content);
+lenght = 0;
 else
-text_content = "";
+lenght = strlen(text_content);
 write_bytes = write(fd, text_content, lenght);
 if (write_bytes < 0)
-close(fd);
 {
+close(fd);
 return (-1);
 }
 close(fd);
