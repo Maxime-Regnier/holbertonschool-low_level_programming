@@ -26,13 +26,12 @@ struct hash_node_s *next;
 
 /**
  * struct hash_table_s - Hash table data structure
+ * @size: The size of the array
+ * @array: An array of pointers to hash_node_t
  *
  * Description: Represents the hash table itself. Contains an array of
  * pointers to hash_node_t and the size of the array. Each array element
  * points to the first node of a linked list to handle collisions.
- *
- * @size: The size of the array
- * @array: An array of pointers to hash_node_t
  */
 
 typedef struct hash_table_s
@@ -42,17 +41,26 @@ hash_node_t **array;
 } hash_table_t;
 
 /**
- * hash_table_create - Creates a new hash table
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Description: Allocates memory for a new hash table and its array of
- * pointers. Initializes each array element to NULL.
- *
- * @size: Size of the array
- *
- * Return: Pointer to the newly created hash table, or NULL on failure
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 int _putchar(char c);
+
+/**
+ * hash_table_create - Creates a new hash table
+ * @size: Size of the array
+ *
+ * Return: Pointer to the newly created hash table, or NULL on failure
+ *
+ * Description: Allocates memory for a new hash table and its array of
+ * pointers. Initializes each array element to NULL.
+ */
+
+
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
