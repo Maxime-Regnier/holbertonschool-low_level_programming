@@ -6,6 +6,17 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct hash_node_s - Node of a hash table
+ *
+ * Description: Represents a single element in the hash table, storing
+ * a key-value pair and a pointer to the next node to handle collisions.
+ *
+ * @key: The key, a unique string in the hash table
+ * @value: The value corresponding to a key
+ * @next: Pointer to the next node in case of collision (chaining)
+ */
+
 typedef struct hash_node_s
 {
 char *key;
