@@ -10,19 +10,17 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-int fd;
-char *buffer;
+int fd, lenght = 0;
 ssize_t write_bytes;
 if (filename == NULL)
 return (-1);
-fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 600);
-if (fd < 0)
+fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+if (fd == -1)
 return (-1);
 if (text_content == NULL)
-buffer = text_content;
+text_content = "";
 else
-buffer = "";
-write_bytes = write(fd, buffer, strlen(buffer));
+write_bytes = write(fd, text_content, lenght);
 if (write_bytes < 0)
 return (-1);
 close(fd);
