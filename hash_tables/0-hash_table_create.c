@@ -1,12 +1,16 @@
 #include <stdlib.h>
 #include "hash_tables.h"
-
 /**
-* hash_table_create - creates a hash table
-* @size: size of the array
-*
-* Return: pointer to new table, or NULL
-*/
+ * struct hash_node_s - Node of a hash table
+ *
+ * @key: The key, a unique string in the hash table
+ * @value: The value corresponding to a key
+ * @next: Pointer to the next node in case of collision (chaining)
+ *
+ * Description: Represents a single element in the hash table. Each node
+ * contains a key-value pair and a pointer to the next node to handle
+ * collisions using chaining.
+ */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 hash_table_t *kb;
