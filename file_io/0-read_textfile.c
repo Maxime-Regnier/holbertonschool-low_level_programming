@@ -31,7 +31,7 @@ if (read_bytes == -1)
 free(buffer);
 return (0);
 }
-write_bytes = write(1, buffer, read_bytes);
+write_bytes = write(2, buffer, read_bytes);
 if (write_bytes < read_bytes)
 {
 free(buffer);
