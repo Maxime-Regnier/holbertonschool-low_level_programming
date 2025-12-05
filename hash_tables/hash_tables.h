@@ -7,6 +7,24 @@
 #include <string.h>
 
 /**
+ * struct hash_node_s - Node of a hash table
+ * @key: The key, string, unique in the hash table
+ * @value: The value corresponding to a key
+ * @next: Pointer to the next node in case of collision (chaining)
+ *
+ * Description: Represents a single element in the hash table. Each node
+ * contains a key-value pair and a pointer to the next node to handle
+ * collisions using chaining.
+ */
+
+typedef struct hash_node_s
+{
+char *key;
+char *value;
+struct hash_node_s *next;
+} hash_node_t;
+
+/**
  * struct hash_table_s - Hash table data structure
  *
  * Description: Represents the hash table itself. Contains an array of
@@ -16,13 +34,6 @@
  * @size: The size of the array
  * @array: An array of pointers to hash_node_t
  */
-
-typedef struct hash_node_s
-{
-char *key;
-char *value;
-struct hash_node_s *next;
-} hash_node_t;
 
 typedef struct hash_table_s
 {
