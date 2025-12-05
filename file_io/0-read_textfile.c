@@ -24,6 +24,7 @@ return (0);
 }
 buffer = malloc(letters * sizeof(char));
 if (buffer == NULL)
+close(fd);
 return (0);
 read_bytes = read(fd, buffer, letters);
 if (read_bytes == -1)
