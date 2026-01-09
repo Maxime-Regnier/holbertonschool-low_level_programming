@@ -18,6 +18,6 @@ int h;
 
 hash = 5381;
 while ((h = *str++))
-hash = ((hash << 5) + hash) + h);
+hash = ((hash << 5) + hash) + h;
 return (hash);
 }
